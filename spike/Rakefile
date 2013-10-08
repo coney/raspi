@@ -1,0 +1,7 @@
+Dir.glob(File.expand_path("../task/*.rb", __FILE__)) do |file|
+  load file
+end
+
+task :default do
+#  Do nothing
+end
