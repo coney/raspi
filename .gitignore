@@ -1,2 +1,9 @@
+# 
 temp/*
+config.gz
+
+# VS project files
+*.sln
+*.suo
+*.vcxproj*
 
