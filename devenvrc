@@ -1,16 +1,4 @@
-# YOU NEED TO UPDATE THIS PART
-export RASPI_BASE=~/raspi
-export RASPI_DEV_USER=coney
-export RASPI_DEV_ADDRESS=192.168.0.150
-export RASPI_DEV_SSH_PORT=22
-export RASPI_DEV_APP_BASE=~
-
-# set 3rd party tool and source path
-export RASPI_TOOL_PATH=$RASPI_BASE/tools
-export RASPI_LINUX_PATH=$RASPI_BASE/linux
-export RASPI_FIRMWARE_PATH=$RASPI_BASE/firmwire
-
-# update cross compiler path
-export RASPI_CROSS_PREFIX=arm-linux-gnueabihf-
-export RASPI_CROSS_BIN=$RASPI_TOOL_PATH/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin
-export PATH=$RASPI_CROSS_BIN:$PATH
+# for kernel compiling
+export RASPI_BASE=$(pwd)
+export KERNEL_SRC=$RASPI_BASE/linux
+export CCPREFIX=$RASPI_BASE/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/arm-linux-gnueabihf-
