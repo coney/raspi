@@ -7,6 +7,6 @@
 [submodule "tools"]
 	path = tools
 	url = https://github.com/raspberrypi/tools
-[submodule "wiringPi"]
-	path = wiringPi
-	url = git://git.drogon.net/wiringPi
+[submodule "tw-joystick"]
+	path = tw-joystick
+	url = https://github.com/coney/tw-joystick.git
