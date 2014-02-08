@@ -19,8 +19,14 @@ make mrproper -C $KERNEL_SRC
 log Decompress kernel config
 cat $KERNEL_CONFIG | gzip -d > $KERNEL_SRC/.config
 
+#log Prime kernel with old config
+#make -C $KERNEL_SRC oldconfig
+
 log Prepare for modules compilation
-make -C $KERNEL_SRC modules_prepare
+#make -C $KERNEL_SRC prepare
+#make -C $KERNEL_SRC scripts
+#make -C $KERNEL_SRC modules_prepare
+make -C $KERNEL_SRC 
 exit 0
 
 log Make kernel
